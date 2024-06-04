@@ -1,5 +1,6 @@
 FROM ubuntu:22.04
 
+LABEL org.opencontainers.image.source=https://github.com/cblument/fake_log_generator
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
